@@ -31,6 +31,8 @@ Edit the code and add your API key in the header
 ##### Usage
 Get the command line help using:
 <code>$ python PiLiteForecastMessager.py -h</code>
-To run the script on bootup, edit <code>/etc/rc.local</code> and add a line with:
+To add user defined locations (supports UK PostCode, ZipCodes, one per line)
+<code>python PiLiteForecastMessager.py -l locations.txt -m messages.txt</code>
+To run the script on bootup, edit <code>/etc/rc.local</code> and add the command with fill paths similar to:
 <code>/home/pi/PiLite/PiLiteForecastMessager.py -l /home/pi/PiLite/locations.txt -m /home/pi/git/PiLite/messages.txt &</code>
 
